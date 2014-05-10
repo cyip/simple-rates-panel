@@ -1,0 +1,37 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+	background-color: #212226;
+}
+
+.container {
+    position: relative;
+    width: 420px;
+    height: 150px;
+    /*border-style: solid;*/
+    margin: 0 auto;  
+    border-color: white;
+}
+
+.quote {
+    position: absolute;
+    width: 200px;
+    text-align:center;
+    padding: 50px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    font-size: 30px;
+    color: white;
+    background-color: #212226;
+}
+
+#bid {
+    left: 0;
+}
+
+#ask {
+    left: 200px;
+}
