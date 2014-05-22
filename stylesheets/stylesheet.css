@@ -8,6 +8,14 @@ body {
 	background-color: #212226;
 }
 
+#hack {
+    position: relative;
+    width: 220px;
+    height: 30px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+    margin: 0 auto;
+}
+
 .container {
     position: relative;
     width: 420px;
