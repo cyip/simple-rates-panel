@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/json2/20121008/json2.min.js"></script>
 <script type="application/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://developer.oanda.com/oandajs/oanda.js"></script>
@@ -32,7 +33,7 @@ $(function() {
 
             //update the displayed rates
             $("#bid").text(priceInfo.bid);
-            $("#ask").text(priceInfo.ask);
+            $("#ask").text(priceInfo.ask); 
         });
     }
 
@@ -54,22 +55,18 @@ $(function() {
 </script>
 </head>
 <body>
-
-<form>
-    <select id="selectSymbol">
-    </select>
-</form>
-
-<div id='quote-panel'>
-    <div>
-        <span>BID: </span>
-        <span id="bid"></span>
+    <div id="hack">
+    <form>
+        <select id="selectSymbol">
+        </select>
+    </form>
     </div>
-    <div>
-        <span>ASK: </span>
-        <span id="ask"></span>
-    </div>
-</div>
 
+    <div class="container">
+    <div class="quote-panel">
+        <div class="quote" id ="bid"></div>
+        <div class="quote" id ='ask'></div>
+    </div>
+    </div>
 </body>
 </html>
